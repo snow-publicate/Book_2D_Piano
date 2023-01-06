@@ -33,13 +33,13 @@ public class PianoSounds : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        Debug.Log("터치 시작");
+        // Debug.Log("터치 시작");
         AudioPlay();
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        Debug.Log("터치 종료");
+        // Debug.Log("터치 종료");
         Invoke("AudioStop",0.7f);
     }
 
