@@ -22,10 +22,10 @@ public class AutoPlay : MonoBehaviour
             runTime = 0f; //자동연주 시작 시 연주 시간 0초로 초기화
             for(int i = 0; i < keyCount; i++) //연주할 노트 개수 만큼 반복 실행
             {   
-                //연주 시간에 사용자가 Unity에디터에서 할당한 노트별 시간을 반복 시마다 누가
+                //runTime 변수에, Unity에디터에서 할당할 노트별 시간을 반복 시마다 누가
                 runTime += playTime[i]; 
 
-                //연주할 건반에 사용자가 Unity에디터에서 할당한 건반 객체 할당
+                //playingKey 변수에, Unity에디터에서 할당할 건반 객체 할당
                 playingKey = GameObject.Find(pianoKey[i].name);
 
                 //연주할 건반 연주 중단(이전에 실행 중인 것이 있을 시 중단 목적) 
